@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* show more example from stack overflow */
+    .ty-compact-list {
+        padding: 5px 5px 5px 0px;
+        float: left;
+        width: 100%;
+    }
+
+    .show-more {
+        display: none;
+        cursor: pointer;
+    }
+
+    /* example end */
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="ty-compact-list" style="padding: 5px 5px 5px 0px; float: left; width: 100%;">Product 1</div>
+        <div class="ty-compact-list" style="padding: 5px 5px 5px 0px; float: left; width: 100%;">Product 2</div>
+        <div class="ty-compact-list" style="padding: 5px 5px 5px 0px; float: left; width: 100%;">Product 3</div>
+        <div class="ty-compact-list" style="padding: 5px 5px 5px 0px; float: left; width: 100%;">Product 4</div>
+        <div class="ty-compact-list" style="padding: 5px 5px 5px 0px; float: left; width: 100%;">Product 5</div>
+        <div class="ty-compact-list" style="padding: 5px 5px 5px 0px; float: left; width: 100%;">Product 6</div>
+        <div class="show-more">Show more</div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        //this will execute on page load(to be more specific when document ready event occurs)
+        if ($('.ty-compact-list').length > 3) {
+            $('.ty-compact-list:gt(2)').hide();
+            $('.show-more').show();
+        }
+
+        $('.show-more').on('click', function () {
+            //toggle elements with class .ty-compact-list that their index is bigger than 2
+            $('.ty-compact-list:gt(2)').toggle();
+            //change text of show more element just for demonstration purposes to this demo
+            $(this).text() === 'Show more' ? $(this).text('Show less') : $(this).text('Show more');
+        });
+    </script>
+</body>
+<!-- are u there?-->
+<!-- yes sir -->
+
+</html>

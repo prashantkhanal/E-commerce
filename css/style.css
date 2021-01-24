@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+:root{
+    --color-green:#4F892B ;
+    --color-maroon: #892B2B ;
+    --color-gray: #5C694F ;
+    --color-red: #F90404 ;
+    --color-light-orange:#B8A053 ;
+    --color-orange:#FF8700  ;
+    --color-black:#000000 ;
+    --color-light-maron:#5C0000  ;
+    --color-light:#E7E7E7 ;
+    --color-semi-orange:#FFA100 ;
+}
+
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    /* font-family: 'Poppins', sans-serif; */
+    box-sizing: border-box;
+    background: #00000057;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* ------------utlility class----------------------------------------------------------------------- */
+
+.heading-primary{
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    color: var(--color-light-maron);
+}
+
+#about-heading {
+   
+    margin-top: 1.3rem;
+    
+}
+.heading-secondary{
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-red);
+    font-family:'Open Sans', sans-serif;
+}
+
+li a:link,
+li a:visited{
+    text-decoration: none;
+    color: var(--color-red);
+    transition: color .3s ease-in-out;
+    
+}
+li{
+    list-style: none;
+}
+
+li a:hover
+/* li a:visited{ */
+    {
+    color: var(--color-black);
+
+}
+
+#animation{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    color: var(--color-orange);
+    font-size: 2rem;
+    animation: fromTop .3s ease-in-out;
+}
+
+@keyframes fromTop{
+    0% {
+        opacity: 0;
+        transform: translateY(3rem);
+    }
+    50% {
+        transform: translateY(-3rem);
+
+        
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+/* -----------for fav-icon-------------- */
+i{
+    color: black !important;
+    padding: 2px 2px;
+    display: flex;
+}
+
+#line{
+    font-size: 1rem;
+    padding: 2px 8px;
+}
+
+.favicon{
+    display: inline;
+}
+
+/* ----------------------Navbar-------------------- */
+.navbar-brand{
+    font-size: 800;
+
+}
+img{
+    width: 7rem;
+}
+
+#Navigation{
+    margin-right: -0.6rem;
+}
+
+#carousel{
+    margin-right: -0.7rem;
+}
+
+
+.d-flex{
+    /* border: 3px solid var(--color-maroon); */
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 1rem;
+    font-weight: 900;
+    
+}
+
+.dropdown-item{
+    color: var(--color-light);
+    padding: 0.4rem 1rem;
+}
+
+
+
+/********** for cards ************************/
+#text-primary{
+    margin: .3rem .3rem;
+    
+    /* font-family: 'Poppins', sans-serif; */
+    /* border: 2px solid black; */
+    font-weight: 900;
+    color: var(--color-light-maron);
+    margin-top: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    text-decoration: underline;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+
+
+
+
+
+#PrimaryDiscription{
+        
+    
+    border-right: 1px solid black;
+    
+    transition: all 0.4s ease-in-out;
+    
+            
+    
+}
+
+#PrimaryDiscription:hover{
+    box-shadow: .5rem .5rem .4rem  .1rem var(--color-green);
+    cursor: pointer;
+}
+
+.image{
+    width: 13rem;
+    height: 12rem;
+    margin-bottom: 3rem;
+    
+    display: block; 
+    margin: auto;
+    padding: 2.6rem 1.9rem;
+    border-radius: 1.5rem;
+    border: 1px solid red;
+    margin-top: 3rem;
+    overflow: hidden;
+    
+}
+
+/* .image:hover{ */
+    /* box-shadow: .1rem .1rem .1rem  .2rem var(--color-light-maron);
+    cursor: pointer;
+} */
+
+.discription{
+    list-style: none;
+    font-weight: 900;
+    text-align: center;
+    font-family: inherit;
+    color: var(--color-black);
+    font-size: 1.5rem;
+    padding: 0rem 2.5rem;
+    margin-top: 1.3rem;
+}
+
+
+.link{
+    text-decoration: none;
+    margin: 21px 4px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    color: var(--color-red);
+}
+
+
+
+
+
+
+
+/* ----------Icons----------------- */
+
+#icons{
+    background: linear-gradient(rgba(255, 166, 0, 0.696), rgba(255,255, 25, 0.5)) ;
+    margin-top: 4rem;
+    
+} 
+
+.user{
+    border: 2px solid var(--color-red);
+    border-radius: 40%;
+    padding: 3px 3px;
+    border-style: dotted;
+    background: var(--color-light);
+    background-size: cover;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    
+}
+
+
+
+/* -------------About Section---------------------- */
+
+#about{
+    background-image: linear-gradient(to left bottom, rgba(23, 68, 14, 0.767), rgba(128, 128, 128, 0.596));
+    
+}
+
+#about-section{
+    margin-right: 2rem;
+    
+}
+
+.col-3#about-section{
+    
+    width: 19% !important;
+    /* margin-right: 2rem; */
+
+
+}
+
+
+
+#about-sub-heading{
+    padding-left: 0px;
+}
+
+.store-logo{
+    margin-left: -1.3rem;
+    display: block;
+}
+
+#copyright{
+    margin-top: 2rem;
+}
+
+.payment-image{
+    width: 4.7rem;
+    padding: .8rem 0rem;
+    margin: .2rem 1.5rem;
+}
+
+#paymentlogo{
+    background: #ffffff;
+
+}
+
+
+#btn{
+    font-size: .5rem;
+    padding: 3px;
+}
+
+
+
+/* ------------------Footer---------------- */
+
+#footer{
+    background: #212529c5
+}
+
+
+.text-end{
+    display: flex !important;
+    justify-content: space-between !important;
+}
+
+
+/* -------------------------------------Media Query------------------------------------------ */
+
+/* ----------------For SearchBar and Logo---------------- */
+@media only screen and (max-width: 991px) { 
+  #main-logo{
+      display: none;
+  }
+@media only screen and (max-width: 991px) { 
+  #logo-nav{
+      display: none;
+  }
+
+}
+
+/* --------------For Font size----------------------------------- */
+
+
+@media only screen and (max-width: 862px) { 
+    .heading-secondary{
+        font-size: 0.5rem;
+      
+}
+@media only screen and (max-width: 862px) { 
+    #line{
+        font-size: 0.5rem;
+      
+}
+@media only screen and (max-width: 862px) { 
+    .heading-secondary{
+        font-size: 0.5rem;
+      
+}
+@media only screen and (max-width: 473px) { 
+    #line{
+        font-size: 0.5rem;
+      
+}
+@media only screen and (max-width: 390px) { 
+    .heading-primary{
+        font-size: 0.6rem;
+      
+}
+
+
+/* ---------------For brand logo--------------------- */
+
+@media only screen and (max-width: 922px) { 
+    #text-primary{
+      font-size: 1rem;
+  }
+
+}
+
+@media only screen and (max-width: 996px) { 
+    a.link{
+        font-size: .7rem;
+    }
+      
+  }
+@media only screen and (max-width: 996px) { 
+    .image{
+        height: 18.3rem;
+        width: 14.4rem;
+        padding: 17px 13px;
+    }
+      
+  }
+@media only screen and (max-width: 557px) { 
+    .image{
+        height: 7rem;
+        width: 10.2rem;
+        
+    }
+      
+  }
+/* @media only screen and (max-width: 683px) { 
+    .image{
+        height: 10rem;
+        width: 9rem;
+        
+    }
+      
+  } */
+
+@media only screen and (max-width: 299px) { 
+    .image{
+        height: 5rem;
+        width: 4rem;
+        
+    }
+      
+  }
+@media only screen and (max-width: 665px) { 
+    .image{
+        height: 8rem;
+        width: 9rem;
+        padding: 22px 9px;
+        
+    }
+      
+  }
+@media only screen and (max-width: 659px) { 
+    .image{
+        height: 7rem;
+        width: 8rem;
+        padding: 17px 13px;
+        
+    }
+      
+  }
+@media only screen and (max-width: 625px) { 
+    .image{
+        height: 6rem;
+        width: 7rem;
+        padding: 14px 9px;
+        
+    }
+      
+  }
+@media only screen and (max-width: 608px) { 
+    .image{
+        height: 5rem;
+        width: 6rem;
+        padding: 9px 10px;
+        
+    }
+      
+  }
+/* @media only screen and (max-width: 615px) { 
+    .image{
+        height: 9rem;
+        width: 10rem;
+        padding: 17px 13px;
+        
+    }
+      
+} */
+/* @media only screen and (max-width: 602px) { 
+    .image{
+        height: 6rem;
+        width: 7rem;
+        padding: 17px 13px;
+        
+    }
+      
+} */
+@media only screen and (max-width: 474px) { 
+    .image{
+        height: 6rem;
+        width: 7rem;
+        
+        
+    }
+      
+}
+@media only screen and (max-width: 343px) { 
+    .image{
+        height: 5rem;
+        width: 6rem;
+        padding: 6px 7px;
+        
+    }
+      
+}
+/* @media only screen and (max-width: 686px) { 
+    .image{
+        height: 10rem;
+        width: 6rem;
+        padding: 6px 7px;
+        
+    }
+      
+} */
+
+
+
+/* --------------------------About us Section------------------------------------- */
+@media only screen and (max-width: 779px) { 
+    .col-3#about-section{
+        width: 10% !important;
+        
+    }
+      
+}
+@media only screen and (max-width: 768px) { 
+    .col-3#about-section{
+        width: 20% !important;
+        
+    }
+      
+}
+@media only screen and (max-width: 566px) { 
+    .col-3#about-section{
+        width: 19% !important;
+        
+    }
+      
+}
+/* @media only screen and (max-width: 566px) { 
+    .col-3#about-section{
+        width: 19% !important;
+        
+    }
+      
+} */
+@media only screen and (max-width: 371px) { 
+    .col-3#about-section{
+        width: 15% !important;
+        
+    }
+}
+
+
